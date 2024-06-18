@@ -22,7 +22,7 @@ public class Serialization
         }
         catch (Exception ex)
         {
-            Utilities.BLogger.BLog.LogError($"Error during deserialization: {ex.Source}");
+            Utilities.BLogger.BLog.LogError($"Error during deserialization: {ex.Message}");
             return null;
         }
     }
@@ -41,7 +41,7 @@ public class Serialization
         }
         catch (Exception ex)
         {
-            Utilities.BLogger.BLog.LogError($"Error during deserialization: {ex}");
+            Utilities.BLogger.BLog.LogError($"Error during deserialization: {ex.Message}");
             return null;
         }
     }
